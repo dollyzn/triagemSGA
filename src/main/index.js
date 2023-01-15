@@ -22,8 +22,9 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
+    autoHideMenuBar: true,
     useContentSize: true,
-    fullscreen: fullscreen,
+    fullscreen: fullscreen
   })
 
   mainWindow.loadURL(winURL)
